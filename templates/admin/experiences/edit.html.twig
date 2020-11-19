@@ -1,0 +1,36 @@
+{% extends 'admin.html.twig' %}
+
+{% block body %}
+  <div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <h5 class="card-header">Expériences</h5>
+            <div class="card-body">
+                {% include 'admin/experiences/_form.html.twig' %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Trumbowyg/2.21.0/ui/trumbowyg.min.css" integrity="sha512-XjpikIIW1P7jUS8ZWIznGs9KHujZQxhbnEsqMVQ5GBTTRmmJe32+ULipOxFePB8F8j9ahKmCjyJJ22VNEX60yg==" crossorigin="anonymous" />
+{% endblock %}
+
+{% block javascripts %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Trumbowyg/2.21.0/trumbowyg.min.js" integrity="sha512-l6MMck8/SpFCgbJnIEfVsWQ8MaNK/n2ppTiELW3I2BFY5pAm/WjkNHSt+2OD7+CZtygs+jr+dAgzNdjNuCU7kw==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Trumbowyg/2.21.0/langs/fr.min.js" integrity="sha512-UcIsJdBCuvuHt4LR6FoShixLYQXvVPTFrHBI+cXa1VNBJ7E+dRLb42xyLzfR6mKiQ7Z/YdRMFjQSDzvYYCr3vw==" crossorigin="anonymous"></script>
+    <script>
+        $('textarea.form-control').trumbowyg({
+            lang: 'fr',
+            removeformatPasted: true,
+            tagsToRemove: ['script', 'link'],
+            btns: [
+                ['viewHTML'],
+                ['undo', 'redo'],
+                ['strong', 'em', 'del'],
+                ['unorderedList']
+            ]
+        });
+    </script>
+{% endblock %}

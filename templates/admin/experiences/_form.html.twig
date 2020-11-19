@@ -1,0 +1,13 @@
+
+{{ form_start(form, {attr: {class: 'stacked'}}) }}
+<div class="grid">
+  {{ form_row(form.job) }}
+  {{ form_row(form.company) }}
+  {{ form_row(form.startAt) }}
+  {{ form_row(form.endAt) }}
+  {{ form_row(form.content) }}
+  <div class="full">
+    <button type="submit" class="btn btn-success">Sauvegarder</button>
+  </div>
+</div>
+{{ form_end(form) }}

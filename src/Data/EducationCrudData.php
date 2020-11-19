@@ -26,14 +26,14 @@ final class EducationCrudData implements CrudDataInterface
 
     public Education $entity;
 
-    public static function make(Education $award): self
+    public static function make(Education $education): self
     {
         $data = new self();
-        $data->degree = $award->getDegree();
-        $data->school = $award->getSchool();
-        $data->startAt = $award->getStartAt();
-        $data->endAt = $award->getEndAt();
-        $data->entity = $award;
+        $data->degree = $education->getDegree();
+        $data->school = $education->getSchool();
+        $data->startAt = $education->getStartAt();
+        $data->endAt = $education->getEndAt();
+        $data->entity = $education;
         return $data;
     }
 

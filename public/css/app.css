@@ -1,0 +1,196 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, sans-serif;
+  color: #545e6c;
+  background: #f5f5f5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+}
+
+.cv {
+  max-width: 1000px;
+  margin: 32px auto;
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.sidebar {
+  color: #ffffff;
+  background-color: #4b6a78;
+  padding: 24px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.sidebar h2 {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 8px;
+  margin-top: 32px;
+}
+
+.sidebar h2:first-child {
+  margin-top: 0;
+}
+
+.sidebar h3 {
+  margin-bottom: 8px !important;
+}
+
+.sidebar .profile {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 24px;
+  margin: -24px;
+  margin-bottom: 24px;
+}
+
+.sidebar .contact-list li {
+  margin-bottom: 8px;
+  display: flex;
+}
+
+.sidebar .contact-list li i {
+  margin-right: 8px;
+  font-size: 16px;
+}
+
+.sidebar .languages li {
+  line-height: 1.1rem;
+}
+
+.sidebar .languages span {
+  color: hsla(0, 0%, 100%, 0.6);
+}
+
+.sidebar .skills {
+  margin-bottom: 16px;
+}
+
+.sidebar .skills li {
+  display: inline-block;
+  line-height: 1.1rem;
+}
+
+.sidebar .skills li:after {
+  content: ', ';
+}
+
+.sidebar .skills li:last-child:after {
+  content: '';
+}
+
+.sidebar .avatar {
+  display: block;
+  max-width: 150px;
+  margin: 0 auto 16px;
+  border: 0 solid #fff;
+  border-radius: 100%;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar .name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.sidebar h3 {
+  color: hsla(0, 0%, 100%, 0.6);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.sidebar .phone i {
+  transform: rotate(90deg);
+}
+
+.content {
+  padding: 24px;
+}
+
+.content h2 {
+  display: flex;
+  font-family: Montserrat, sans-serif;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #2e4049;
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 8px;
+  margin-top: 32px;
+}
+
+.content h2:first-child {
+  margin-top: 0;
+}
+
+.content i {
+  margin-right: 16px;
+}
+
+.item {
+  margin-bottom: 16px;
+}
+
+.item .upper-row {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 8px;
+  line-height: 1.1rem;
+}
+
+.item .job-title {
+  color: #3f4650;
+  font-size: 1rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 500;
+}
+
+.item .time,
+.item .company {
+  color: #59769b;
+}
+
+.item .company {
+  margin-bottom: 8px;
+}
+
+.item ul {
+  list-style: disc;
+  margin: 0 24px;
+  padding-left: 24px;
+  text-align: justify;
+}
+
+.item ul li {
+  line-height: 1.1rem;
+  margin: 8px 0;
+}
